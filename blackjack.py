@@ -1,4 +1,5 @@
 import random
+import sys
 
 class Card:
     def __init__(self, suit, value, face, ace):
@@ -12,9 +13,9 @@ class Card:
         if self.face == False and self.ace == False:
             cardString = str(self.value) + " of " + str(self.suit)
         elif self.face != False:
-            cardString = str(face.value) + " of " + str(self.suit)
+            cardString = str(self.face) + " of " + str(self.suit)
         if self.face == False and self.ace == True:
-            cardString = str(self.value) + "Ace of " + str(self.suit)
+            cardString = "Ace of " + str(self.suit)
         return cardString
 
 
@@ -97,6 +98,7 @@ print("My my my! What a turnout tonight!")
 cardSelected = []
 for x in range(52):
     cardSelected.append(False)
+
 # Create New List of Shuffled Cards (initalize as empty array)
 shuffledDeck = []
 for x in range(52):
@@ -107,11 +109,28 @@ for x in range(52):
             repeat = False
             shuffledDeck.append(deck[randomNumber]) # add random card to deck
 
-if shuffledDeck[0].face == False:
-    print("Your cards are the " + str(shuffledDeck[0].value) + " of " + shuffledDeck[0].suit)
+print("Your cards are the " + shuffledDeck[0].showCard() + " and the " + shuffledDeck[1].showCard())
+if shuffledDeck[0].value + shuffledDeck[1].value == 21:
+    print("BLACKJACK! You lucky dog, you won.")
 else:
-    print("Your cards are the " + str(shuffledDeck[0].face) + " of " + shuffledDeck[0].suit)
-if shuffledDeck[1].face == False:
-    print("and the " + str(shuffledDeck[1].value) + " of " + shuffledDeck[1].suit)
+    choice = raw_input("Would you like to hit or stand? ")
+if choice == "hit":
+    print("Your card is the " + shuffledDeck[2].showCard())
+    if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2] == 21:
+        print("You win!")
+    elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2] > 21:
+        print("You lose! You went over 21!")
+    else:
+        choice = raw_input("Would you like to hit or stand? ")
+        if choice == "hit":
+            print("nothing")
+            #
+            #finish this you goober
+            #
+        else:
+            print("nothing")
+elif choice == "stand":
+    print("ok")
 else:
-    print("and the " + str(shuffledDeck[1].face) + " of " + shuffledDeck[1].suit)
+    print("I didn't understand that, try again.")
+    sys.exit()
