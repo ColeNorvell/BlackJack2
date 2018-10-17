@@ -110,15 +110,16 @@ for x in range(52):
             shuffledDeck.append(deck[randomNumber]) # add random card to deck
 
 print("Your cards are the " + shuffledDeck[0].showCard() + " and the " + shuffledDeck[1].showCard())
+print("The dealer's up card is the " + shuffledDeck[51].showCard())
 if shuffledDeck[0].value + shuffledDeck[1].value == 21:
     print("BLACKJACK! You lucky dog, you won.")
 else:
     choice = raw_input("Would you like to hit or stand? ")
 if choice == "hit":
     print("Your card is the " + shuffledDeck[2].showCard())
-    if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2] == 21:
+    if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value == 21:
         print("You win!")
-    elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2] > 21:
+    elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value > 21:
         print("You lose! You went over 21!")
     else:
         choice = raw_input("Would you like to hit or stand? ")
