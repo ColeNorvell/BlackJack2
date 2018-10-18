@@ -116,10 +116,38 @@ for x in range(52):
 # Deal Cards
 print("Your cards are the " + shuffledDeck[0].showCard() + " and the " + shuffledDeck[1].showCard())
 print("The dealer's up card is the " + shuffledDeck[51].showCard())
-
+dealersHand = 0
+if shuffledDeck[51].value + shuffledDeck[50].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value != 22:
+  dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
+elif shuffledDeck[51].value + shuffledDeck[50].value == 22:
+  shuffledDeck[51].value == 1
+  #
+  #fix this
+  #
+else:
+  if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
+    dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
+  elif #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  else:
+    if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
+      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
+    else:
+      if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value <= 21:
+        dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value
+      else:
+        if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value <= 21:
+          dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value
+        else:
+          if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value <= 21:
+            dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value
+print(str(dealersHand))
+#
+#delete this
+#
 # If the player is dealt 21, declare winner, end hand
 if shuffledDeck[0].value + shuffledDeck[1].value == 21:
     print("BLACKJACK! You lucky dog, you won.")
+    sys.exit()
 else:
     choice = raw_input("Would you like to hit or stand? ")
 if choice == "hit":
@@ -138,7 +166,7 @@ if choice == "hit":
         else:
             print("nothing")
 elif choice == "stand":
-    print("ok")
+    print("")
 else:
     print("I didn't understand that, try again.")
     sys.exit()
