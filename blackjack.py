@@ -108,9 +108,16 @@ for x in range(52):
         if cardSelected[randomNumber] == False:
             repeat = False
             shuffledDeck.append(deck[randomNumber]) # add random card to deck
+            
+# ---------------------------------------------------------------------------------------------------
+# --------------------------------- PLAY ONE HAND OF BLACKJACK --------------------------------------
+# ---------------------------------------------------------------------------------------------------
 
+# Deal Cards
 print("Your cards are the " + shuffledDeck[0].showCard() + " and the " + shuffledDeck[1].showCard())
 print("The dealer's up card is the " + shuffledDeck[51].showCard())
+
+# If the player is dealt 21, declare winner, end hand
 if shuffledDeck[0].value + shuffledDeck[1].value == 21:
     print("BLACKJACK! You lucky dog, you won.")
 else:
@@ -135,3 +142,7 @@ elif choice == "stand":
 else:
     print("I didn't understand that, try again.")
     sys.exit()
+    
+# ---------------------------------------------------------------------------------------------------
+# --------------------------------- END ONE HAND OF BLACKJACK ---------------------------------------
+# ---------------------------------------------------------------------------------------------------
