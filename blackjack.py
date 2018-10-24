@@ -121,22 +121,48 @@ if shuffledDeck[51].value + shuffledDeck[50].value >= 17 and shuffledDeck[51].va
   dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
 elif shuffledDeck[51].value + shuffledDeck[50].value == 22:
   shuffledDeck[51].value == 1
-  #
-  #fix this
-  #
-else:
   if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
-  elif #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
+     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
   else:
     if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
+    elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
+      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
     else:
       if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value <= 21:
         dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value
+      elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
+        dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
       else:
         if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value <= 21:
           dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value
+        elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] + shuffledDeck[46] > 21:
+          dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47]
+        else:
+          if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value <= 21:
+            dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value
+else:
+  if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
+    dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
+  elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
+     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
+  else:
+    if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
+      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
+    elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
+      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
+    else:
+      if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value <= 21:
+        dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value
+      elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
+        dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
+      else:
+        if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value <= 21:
+          dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value
+        elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] + shuffledDeck[46] > 21:
+          dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47]
         else:
           if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value <= 21:
             dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value
