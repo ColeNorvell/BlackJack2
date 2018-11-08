@@ -87,7 +87,7 @@ deck[49] = Card("Diamonds", 10, "Queen", False)
 deck[50] = Card("Diamonds", 10, "Jack", False)
 deck[51] = Card("Diamonds", 11, False, True)
 
-print("Hello and welcome to BlackJack (inster crowd cheering)")
+print("Hello and welcome to BlackJack (insert crowd cheering)")
 print("My my my! What a turnout tonight!")
 
 # ------------------------------------------------------------------------------
@@ -123,7 +123,7 @@ elif shuffledDeck[51].value + shuffledDeck[50].value == 22:
   if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
   elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
-     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
+    dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
   else:
     if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
