@@ -9,7 +9,6 @@ class Card:
         self.ace = ace
 
     def showCard(self):
-        # Cole, add your logic here
         if self.face == False and self.ace == False:
             cardString = str(self.value) + " of " + str(self.suit)
         elif self.face != False:
@@ -123,17 +122,17 @@ elif shuffledDeck[51].value + shuffledDeck[50].value == 22:
   shuffledDeck[51].value == 1
   if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
-  elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
+  elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
   else:
     if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
-    elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
+    elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
     else:
       if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value <= 21:
         dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value
-      elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
+      elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
         dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
       else:
         if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value <= 21:
@@ -146,17 +145,17 @@ elif shuffledDeck[51].value + shuffledDeck[50].value == 22:
 else:
   if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value <= 21:
     dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
-  elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
+  elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value > 21:
      dealersHand = shuffledDeck[51].value + shuffledDeck[50].value
   else:
     if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value <= 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
-    elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
+    elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value > 21:
       dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value
     else:
       if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value <= 21:
         dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value
-      elif  shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
+      elif shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47] > 21:
         dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value
       else:
         if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value <= 21:
@@ -166,37 +165,99 @@ else:
         else:
           if shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value >= 17 and shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value <= 21:
             dealersHand = shuffledDeck[51].value + shuffledDeck[50].value + shuffledDeck[49].value + shuffledDeck[48].value + shuffledDeck[47].value + shuffledDeck[46].value + shuffledDeck[45].value
-print(str(dealersHand))
-#
-#delete this
-#
 # If the player is dealt 21, declare winner, end hand
+playersHand = 0
 if shuffledDeck[0].value + shuffledDeck[1].value == 21:
     print("BLACKJACK! You lucky dog, you won.")
     sys.exit()
 else:
-    choice = raw_input("Would you like to hit or stand? ")
-if choice == "hit":
-    print("Your card is the " + shuffledDeck[2].showCard())
-    if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value == 21:
-        print("You win!")
-    elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value > 21:
-        print("You lose! You went over 21!")
-    else:
-        choice = raw_input("Would you like to hit or stand? ")
-        if choice == "hit":
-            print("nothing")
-            #
-            #finish this you goober
-            #
+    choice = input("Would you like to hit or stand? ")
+    if choice == "hit":
+        print("Your next card is the " + shuffledDeck[2].showCard())
+        if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value == 21:
+          print("You win!")
+        elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value > 21:
+          print("You lose! You went over 21!")
         else:
-            print("nothing")
-elif choice == "stand":
-    print("")
+            choice = input("Would you like to hit or stand? ")
+            if choice == "hit":
+              print("Your next card is the " + shuffledDeck[3].showCard())
+              if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value == 21:
+                print("You win!")
+              elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value +shuffledDeck[3].value > 21:
+                print("You lose! You went over 21!")
+              else:
+                choice = input("Would you like to hit or stand? ")
+                if choice == "hit":
+                  print("Your next card is the " + shuffledDeck[4].showCard())
+                  if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] == 21:
+                    print("You win!")
+                  elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] > 21:
+                    print("You lose! You went over 21!")
+                  else:
+                    choice = input("Would you like to hit or stand? ")
+                    if choice == "hit":
+                      print("Your next card is the " + shuffledDeck[5].showCard())
+                      if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] == 21:
+                        print("You win!")
+                      elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] > 21:
+                        print("You lose! You went over 21!")
+                      else:
+                        choice = input("Would you like to hit or stand? ")
+                        if choice == "hit":
+                          print("Your next card is the " + shuffledDeck[6].showCard())
+                          if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] == 21:
+                            print("You win!")
+                          elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] > 21:
+                            print("You lose! You went over 21!")
+                          else:
+                            choice = input("Would you like to hit or stand? ")
+                            if choice == "hit":
+                              print("Your next card is the " + shuffledDeck[7].showCard())
+                              if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] == 21:
+                                print("You win!")
+                              elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] > 21:
+                                print("You lose! You went over 21!")
+                              else:
+                                choice = input("Would you like to hit or stand? ")
+                                if choice == "hit":
+                                  print("Your next card is the " + shuffledDeck[8].showCard())
+                                  if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] + shuffledDeck[8] == 21:
+                                    print("You win!")
+                                  elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] + shuffledDeck[8] > 21:
+                                    print("You lose! You went over 21!")
+                                  else:
+                                    choice = input("Would you like to hit or stand? ")
+                                    if choice == "hit":
+                                      print("Your next card is the " + shuffledDeck[9].showCard())
+                                      if shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] + shuffledDeck[8] + shuffledDeck[9] == 21:
+                                        print("You win!")
+                                      elif shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3] + shuffledDeck[4] + shuffledDeck[5] + shuffledDeck[6] + shuffledDeck[7] + shuffledDeck[8] + shuffledDeck[9] > 21:
+                                        print("You lose! You went over 21!")
+                                      else:
+                                        print("okay that's enough hitting for you")
+                                        playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value + shuffledDeck[5].value + shuffledDeck[6].value + shuffledDeck[7].value + shuffledDeck[8].value + shuffledDeck[9].value
+                                    else:
+                                      playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value + shuffledDeck[5].value + shuffledDeck[6].value + shuffledDeck[7].value + shuffledDeck[8].value
+                                else:
+                                  playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value + shuffledDeck[5].value + shuffledDeck[6].value + shuffledDeck[7].value
+                            else:
+                              playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value + shuffledDeck[5].value + shuffledDeck[6].value
+                        else:
+                          playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value + shuffledDeck[5].value
+                    else:
+                      playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value + shuffledDeck[4].value
+                else:
+                  playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value + shuffledDeck[3].value
+            else:
+              playersHand = shuffledDeck[0].value + shuffledDeck[1].value + shuffledDeck[2].value
+    else:
+      playersHand = shuffledDeck[0].value + shuffledDeck[1].value
+
+if int(playersHand) >= int(dealersHand):
+  print("You win! You beat the dealer!")
 else:
-    print("I didn't understand that, try again.")
-    sys.exit()
-    
+  print("You lose! The dealer beat you!")
 # ---------------------------------------------------------------------------------------------------
 # --------------------------------- END ONE HAND OF BLACKJACK ---------------------------------------
 # ---------------------------------------------------------------------------------------------------
